@@ -17,18 +17,21 @@ header h1 {
 
 header form {
     margin-top: 20px;
+    display: flex; /* For å plassere elementene ved siden av hverandre */
+    justify-content: center; /* For å sentrere elementene horisontalt */
 }
 
 header input[type="text"] {
-    padding: 8px;
+    padding: 10px; /* Økt padding for å gjøre søkefeltet litt lengre */
     border: none;
     border-radius: 4px;
     margin-right: 5px;
+    flex-grow: 1; /* For å utnytte all tilgjengelig plass */
 }
 
 header button {
-    padding: 8px 15px;
-    background-color: #4CAF50;
+    padding: 10px 15px; /* Justere padding for å matche søkefeltet */
+    background-color: #008CBA; /* Endre fargen på søkeknappen */
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -36,5 +39,5 @@ header button {
 }
 
 header button:hover {
-    background-color: #45a049;
+    background-color: #005f79; /* Justere hover-fargen */
 }
