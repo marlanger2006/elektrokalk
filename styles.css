@@ -26,7 +26,8 @@ header input[type="text"] {
     border: none;
     border-radius: 4px;
     margin-right: 5px;
-    flex-grow: 1; /* For å utnytte all tilgjengelig plass */
+    flex-grow: 2; /* For å utnytte all tilgjengelig plass */
+    width: 300px; /* Endre bredden til ønsket størrelse */
 }
 
 header button {
