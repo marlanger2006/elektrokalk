@@ -1,75 +1,66 @@
-body, h1, button, input {
+/* Reset av margin og padding for alle elementer */
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
 }
 
+/* Globale stiler */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Stil for headeren */
 header {
-    background-color: #000;
+    background-color: #333;
     color: #fff;
-    text-align: center;
     padding: 20px;
-}
-
-.search-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.search-container input[type="search"] {
-    padding: 10px;
-    margin-right: 5px;
-    width: 70%;
-}
-
-.search-container button {
-    padding: 10px;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.calculator-category {
-    width: 150px;
-    padding: 20px;
-    margin: 10px;
-    background-color: #fff;
     text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Skyggeeffekt */
 }
 
-.icon {
-    font-size: 30px;
+/* Stil for overskriften */
+header h1 {
+    font-size: 24px;
     margin-bottom: 10px;
-    background-color: #555;
-    color: #fff;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    display: inline-block;
 }
 
-.description {
-    color: #333;
+/* Stil for søkefeltet */
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (max-width: 600px) {
-    .search-container input[type="search"], .search-container button {
-        width: 100%;
-    }
+/* Stil for søkeknappen */
+.search-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Overgangseffekt */
+}
 
-    .search-container button {
-        margin-top: 5px;
-    }
+/* Endre farge på søkeknappen ved hover */
+.search-btn:hover {
+    background-color: #45a049;
+}
 
-    .calculator-category {
-        width: 100%;
-        max-width: 300px;
+/* Stil for søkefeltet */
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Justering av søkefeltet på mindre skjermer */
+@media screen and (max-width: 600px) {
+    .search-input {
+        width: 70%;
     }
 }
